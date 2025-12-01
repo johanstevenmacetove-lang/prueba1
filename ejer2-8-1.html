@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+	<h1>Formulario</h1>
+
+	<from>
+
+			
+		<form>
+		<fieldset>
+			<legend>Datos de usuario</legend>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" size="40" required maxlength="40" placeholder="Email" />
+			<label for="email2">Repita Email</label>
+			<input type="email" name="email2" id="email" size="40" required placeholder="Email"><br/><br />
+		
+			<label for="clave">Clave</label>
+			<input type="password" name="clave" id="clave" required placeholder="Ingresa tu contraseña" size="40" required maxlength="40">
+			<label>Confirmar contraseña:</label>
+			<input type="password" id="confirmar" required size="40" required placeholder="Ingresa tu contraseña">  <br><br>
+		</fieldset>
+		</form>
+		
+		<from>
+			<fieldset>
+				<legend>Datos personales</legend>
+				<label for="Nombre">Nombre</label>
+				<input type="text" name="Nombre" required maxlength="40" size="40"> <br /> <br />
+
+				<label for="fecha de nacimiento">fecha de nacimiento</label>
+				<input type="date"> <br /> <br >
+
+				<label for="sexo">Sexo</label>
+				<input type="radio" name="genero" value="hombre" id="hombre" checked>
+				<label for="hombre">Hombre</label> 
+				<input type="radio" name="genero" value="mujer" id="mujer">
+				<label for="mujer">Mujer</label>
+			</fieldset>
+		</from>
+		
+		<fom>
+			<fieldset>
+				<legend>estudios / trabajo</legend>
+				<label for="Estudios">Estudios</label>
+				<select>
+				<option value="bachiller">bachiller</option>
+				<option value="fp" selected>fp</option>
+				<option value="universidad">universidad</option>
+				</select><br /> <br />
+				<label for="idimas">Estudios</label>
+				<select multiple>
+				<option value="ingles">ingles</option>
+				<option value="español" selected>español</option>
+				<option value="frances">frances</option>
+				</select><br /> <br />
+				<label for="archivo" class="boton-pdf">Seleccionar PDF</label>
+				<input type="file" id="archivo" name="archivo" accept="application/pdf">
+			</fieldset>
+
+			<fieldset>
+				<legend>Otros</legend>
+				<label for="numero">eligue un número del 1 al 100:</label>
+				<input type="number" id="numero" name="numero" min="1" max="100" required><br /><br />
+				<label for="numero">eligue tu color favorito:</label>
+				<input type="color" ><br /><br />
+				<label for="numero">puedes añadir lo que quieras:</label><br />
+				<textarea rows="5" cols="40" name="textoLargo"
+				wrap="hard">Texto por defecto</textarea>
+			</fieldset>
+
+			<button type="reset">Limpiar datos</button>
+			<button type="reset">Limpiar</button>
+		</fom>
+
+
+</from>			
+</body>
+
+</html>

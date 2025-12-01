@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+<h1>Formulario</h1>
+
+<fieldset>
+    <form id="miFormulario" action="respuestas.html" method="get">
+
+        <label for="identificador">ID:</label>
+        <input type="text" name="identificador" id="identificador" disabled value="12" />
+        <br/>
+
+        <label for="usuario">Nombre de usuario:</label> <br/>
+        <input type="text" name="usuario" id="usuario" required /> <br/>
+
+        <label for="clave">Clave:</label> <br/>
+        <input type="password" name="clave" id="clave" required /> <br/>
+
+        <hr/>
+
+        <input type="submit" id="btnEnviar" value="Enviar" />
+		 <input type="reset" value="Borrar datos escritos" />
+		<input type="button" value="no me piches" onclick="alert('porque me pìchas')"/> <br/>
+		<input for="numero telefonico"type="tel"/>				 <br/>
+		<input type="color" /> <br/>
+		<input type="date" /> <br/>
+		<input type="email" /> <br />
+		<select>
+		<option value="araba">mujer</option>
+		<option value="bizkaia" selected>hombre</option>
+		<option value="gipuzkoa">otro</option>
+		</select><br />
+
+				<input type="radio" name="genero" value="hombre" id="hombre" checked>
+		<label for="hombre">Hombre</label><br/>
+
+		<input type="radio" name="genero" value="mujer" id="mujer">
+		<label for="mujer">Mujer</label><br/>
+
+		<input type="radio" name="genero" value="animal" id="animal">
+		<label for="animal">Helicoptero Apache de combate</label><br/>
+
+		<input type="radio" name="genero" value="otro" id="otro">
+		<label for="otro">puta</label><br/>
+
+		<input type="checkbox" name="vehiculo_bici" value="bici" id="bici">
+		<label for="bici">Tengo bici</label><br/>
+
+		<input type="checkbox" name="vehiculo_coche" value="coche" id="coche">
+		<label for="coche">Tengo coche</label><br/>
+
+		<textarea rows="5" cols="48" name="textoLargo" wrap="hard">
+		Texto por defecto 
+		</textarea><br />
+
+		<select>
+			<option value="araba">araba</option>
+			<option value="bizkaia" selected>bizkaia</option>
+			<option value="gipuzkao">gipuzkao</option>
+		</select> <br />
+
+		<form>
+			<fieldset>
+			<legend>Datos de entrada</legend>
+			<label for="usuario">Nombre de usuario:</label> <br/>
+			<input type="text" name="usuario" id="usuario" value="usuario"/><br/>
+			<label for="clave">Clave:</label> <br/>
+			<input type="password" name="clave" id="clave"/> <br/><br/>
+			</fieldset>
+			<br/>
+			<input type="submit" value="Enviar"/>
+			<input type="reset" value="Reset"/>
+			<input type="button" onclick="alert('Hola')" value="Haz click">
+		</form>
+
+
+		  <label for="frutas">Frutas colombianas (autocompletar):</label><br/>
+        <input list="lista_frutas" id="frutas" name="frutas">
+        <datalist id="lista_frutas">
+            <option value="chontaduro">chontaduro</option>
+            <option value="mamoncillo">mamoncillo</option>
+            <option value="zapote">zapote</option>
+            <option value="guanabana">guanábana</option>
+            <option value="pitaya">pitaya</option>
+            <option value="granadilla">granadilla</option>
+            <option value="lulo">lulo</option>
+        </datalist>
+
+
+
+    </form>
+</fieldset>
+
+</body>
+</html>
